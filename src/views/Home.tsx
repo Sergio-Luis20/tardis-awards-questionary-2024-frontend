@@ -2,7 +2,7 @@ import '../styles/Home.css'
 
 const Home : React.FC = () => {
   const verify = () => {
-    window.location.href = import.meta.env.VITE_API_URL + '/oauth2/authorization/discord'
+    window.location.href = process.env.VITE_API_URL + '/oauth2/authorization/discord'
   }
   
   const credits = 'https://github.com/Sergio-Luis20'
