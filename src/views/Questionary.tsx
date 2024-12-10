@@ -163,10 +163,14 @@ function MemberRadio({members, question, setAnswer}: {members: Member[], questio
 
   setAnswer(current)
 
+  function getId(member: Member) {
+    return member.second ? `${member.discordId}_${member.second.discordId}` : member.discordId
+  }
+
   const handleChange = (member: Member) => {
     const newAnswer: QuestionAnswer = {
       questionId: current.questionId,
-      membersIds: [member.second ? `${member.discordId}_${member.second.discordId}` : member.discordId]
+      membersIds: [getId(member)]
     }
     setCurrent(newAnswer)
     setAnswer(newAnswer)
@@ -182,8 +186,8 @@ function MemberRadio({members, question, setAnswer}: {members: Member[], questio
               <input 
                 type='radio' 
                 className='member-radio' 
-                value={member.discordId} 
-                checked={current.membersIds[0] === member.discordId}
+                value={getId(member)} 
+                checked={current.membersIds[0] === getId(member)}
                 onChange={() => handleChange(member)}
               />
               <MemberElement member={member} className='white-element' />
