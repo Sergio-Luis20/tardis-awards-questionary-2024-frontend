@@ -1,0 +1,16 @@
+.admin-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 50px;
+}
+
+.admin-page button {
+  font-size: 16pt;
+  cursor: pointer;
+  padding: 30px 50px;
+  border-radius: 20px;
+  width: 100%;
+}

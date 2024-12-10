@@ -1,0 +1,70 @@
+.results {
+  padding: 40px;
+}
+
+.question-result {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.bars {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.combination {
+  background-color: #15153b;
+  border-radius: 10px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.combination p {
+  white-space: nowrap;
+  cursor: default;
+}
+
+.combination-elements {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.voter-list {
+  display: none;
+  position: absolute;
+  background-color: #512c7a;
+  padding: 10px;
+  border-radius: 10px;
+  max-height: 200px;
+  overflow-y: auto;
+  width: fit-content;
+  z-index: 10;
+  color: white;
+  transform: translateX(-100%);
+}
+
+.voter-list .member {
+  padding: 10px;
+}
+
+.combination p:hover .voter-list {
+  display: block;
+}
+
+.elements {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.result-member {
+  color: white;
+  gap: 20px
+}

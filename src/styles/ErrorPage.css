@@ -1,0 +1,12 @@
+.error-message {
+  color: red;
+}
+
+.return-to-home {
+  background-color: cornflowerblue;
+  color: white;
+  border-radius: 30px;
+  font-size: 24pt;
+  border: 1px solid white;
+  cursor: pointer;
+}

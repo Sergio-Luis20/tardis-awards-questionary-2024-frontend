@@ -1,0 +1,55 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.home-page .md {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 10px;
+}
+
+.home-page h1 {
+  font-size: 36pt;
+}
+
+.home-page h3 {
+  font-size: 18pt;
+}
+
+.home-page footer {
+  padding: 20px;
+}
+
+.home-page a {
+  color: #5765eb;
+}
+
+.home-page a:visited {
+  color: blueviolet;
+}
+
+.login-with-discord {
+  background-color: #5765eb;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 16pt;
+  border: 1px solid white;
+  max-width: fit-content;
+  padding: 20px;
+}
+
+.login-with-discord img {
+  max-width: 64px;
+  max-height: 64px;
+}
